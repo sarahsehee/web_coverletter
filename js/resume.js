@@ -6,12 +6,12 @@ var nav = {
 var bio = {
 	"skills" : [
 		{
-			"skillTitle" : "Design Skills",
+			"skillTitle" : "Design",
 			"skillItems" : ["Concept Developing","Wireframing","Flow", "Prototyping", "User Experience Design","User Interface Design", "Usability Test", "Analyzing Key Metrics","A/B Test"]
 		},
 		{
-			"skillTitle" : "Design Tools",
-			"skillItems" : ["SketchApp","Adobe Creative Suite","ProtoPie","FramerJS","Invision","Google Sheets","HTML/CSS","Google Analytics"]
+			"skillTitle" : "Tools",
+			"skillItems" : ["SketchApp","Adobe Creative Suite","ProtoPie","FramerJS","InVision","Google Sheets","Google Analytics","HTML","CSS","Zeplin","Trello"]
 		},
 		{
 			"skillTitle" : "Languages",
@@ -26,7 +26,7 @@ var education = {
 			"name" : "Rhode Island School of Design",
 			"degree" : "Bachelor of Fine Arts",
 			"dates" : "2009-2014",
-			"location" : "Providence, Rhode Island USA",
+			"location" : "Providence, RI USA",
 			"major" : "Industrial Design"
 		},
 		{
@@ -74,7 +74,7 @@ var work = {
 
 function displayWork(){
 	for (job in work.jobs){
-		$("#workExperience").append(HTMLworkStart);
+		$("#work").append(HTMLworkStart);
 		var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 		var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedWorkDates = HTMLworkDates.replace("%something%", work.jobs[job].dates);

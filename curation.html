@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- This tells the browser how to read the document. -->
+		<meta charset="utf-8">
+		<!-- Tells the browser what the title of this page should be. -->
+		<title> Designing Interactive In-App Survey</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<!-- Load the page styles. -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">  
+		<!--load chart.js-->
+		<link href="css/project-style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<body>
+		<!--nav bar-->
+		<nav class="navbar sticky-top">
+		  <a class="nav-item back" href="index.html">Sarah Sehee</a>
+		  <div class="nav-item on">Project</div>
+		</nav>
+		<!--Introduction-->
+		<main class="container" id="intro2">
+			<article id="project-cover">
+			</article>
+			<article>
+				<section class="row align-self-center container-chart">
+					<div class="col-lg-12">
+						<p class="section-label"> 
+							Challenge
+						</p>
+					</div>
+					<div class="col-lg-12 align-self-center">
+						<h4> 
+							How to install multiple timers that suit users' lifestyle pattern<br> during the first setup process.
+						</h4>
+					</div>
+				</section>
+				<section class="row align-self-center">
+					<div class="col-lg-6 align-self-center">
+						<p class="description">
+							Survey and interview results showed that <strong>94.9%</strong> of users set a timer as soon as they paired smartphones and Swithcer devices for the first time. Also, Swithcer's mobile Google Analytics showed that most of the users don't open the mobile app after the first set-up and just stick with a widget on iOS notification center or a widget on Android Wallpaper. 
+						</p>
+					</div>
+					<figure class="col-lg-6"> 
+						<canvas id="pr2-pie"></canvas> 
+					</figure>
+				</section>
+			</article>
+			<!--chart js-->
+		   <article>
+		   		<div class="container container-chart">
+				<section class="row  justify-content-center">
+					<div class="col-lg-12">
+						<h4> Willingess to become a paid user by the number of timer set-up</h4>
+					</div>
+					<figure class="col-lg-10 align-self-center"> 
+						<canvas id="pr2-bar"></canvas> 
+					</figure>
+				</section>
+				</div>
+			</article>
+			<!--Refining Persona-->
+			<article>
+					<section class="row justify-content-center">
+						<div class="col-lg-10">
+							<p class="section-label">
+								Switcher User Persona
+							</p>
+							<p class="description">
+								Before we get into the sprint, we refined persona to understand the lifestyle and find the right timer use-case patterns for our users. 
+							</p>
+						</div>
+						<div class="col-lg-10">
+							<figure class="card-deck" id="persona">
+							</figure>
+						</div>
+					</section>
+			</article>
+		</main>
+		<div class="container-fluid yellow">
+			<!--Design-->
+			<article>
+				<section class="row container-chart justify-content-center">
+					<div class="col-lg-10 align-self-center">
+						<p class="section-label">
+							User's Pain Points
+						</p>
+						<h4>
+						  1. User cannot imagine timer use cases that suit in their lifestyle.<br>
+						  2. There are too many steps to set and save timers.
+						</h4>
+					</div>
+				</section>
+			</article>
+		</div>
+		<div class="container">
+			<article>
+				<section class="row container-chart">
+					<div class="col-lg-12">
+					<p class="section-label"> Design Solution . Version 1  </p>
+					<h4> Interactive Onboarding Survey </h4>
+					<p class="description">
+						Switcher User cannot find a sufficient information about timer in the app.
+						After trying a timer Pop-up guide, we realzied that pop-up wasn't enough. 
+						So interactive onboarding survey comes in as a solution. It must be feel like consult, smart-home and automattic.
+																				<br> <br>
+						Constraints: The ideal scenario would be incorporate timer function within a widget, but just have a button to open a timer wasn't enough action to encourage users to use the timer. Also, have a timer in widget required more effort and resources than we were limited. 
+					</p>
+					</div>
+				</section>
+				<section class="row container-chart">
+					<div class="col-lg-6">
+						<p class="section-label">
+						Role
+						</p>
+						<ul class="description">
+							<li>User Interface Design</li>
+							<li> Interaction Design</li>
+							<li> Prototyping </li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<p class="description">
+							For this project, I collaborated with a growth team as a visual and interaction designer. My main role was to translate data and black-white wireframes into visual outcome, run iterative design prototyping to support and validate totally new concept.
+						</p>
+					</div>
+				</section>
+			</article>
+		</div>
+		<!--life style questionnaire-->
+		<div class="container-fluid pr2-card-bg">
+			<section class="row">
+				<div class="col-lg-12 text-center container-chart">
+					<h4> Switcher users set and use timers to...</h4>
+				</div>
+			</section>
+			<article class="d-flex justify-content-around flex-lg-row flex-lg-nowrap flex-md-row flex-md-wrap flex-sm-column flex-sm-wrap">
+					<div class="lifestyle">
+						<p class="card-title"> 
+							Morning Alarm
+						</p>
+						<p class="card-middle"> 
+							"When do you wake up in the morning?"
+						</p>
+					</div>
+					<div class="lifestyle">
+						<p class="card-title"> 
+							Empty House
+						</p>
+						<p class="card-middle"> 
+							"When do you usually leave the house?"
+						</p>
+					</div>
+					<div class="lifestyle">
+						<p class="card-title"> 
+							Pet
+						</p>
+						<p class="card-middle"> 
+							"Do you live alone with a dog?"
+						</p>
+					</div>
+					<div class="lifestyle">
+						<p class="card-title"> 
+							Live Alone
+						</p>
+						<p class="card-middle"> 
+							"Do you live alone and scared of dark?"
+						</p>
+					</div>
+					<div class="lifestyle">
+						<p class="card-title"> 
+							Night Timer
+						</p>
+						<p class="card-middle"> 
+							"When do you usually sleep at night?"
+						</p>
+					</div>
+			</article>
+		</div>
+		<!--ProtoPie Protype A & B-->
+		<article>
+			<div class="container">
+				<section class="row container-chart">
+					<div class="col-lg-12 col-md-12 text-center">
+						<h4> 
+							Finding a rigth format to display questionnaire
+						</h4>
+					</div>
+				</section>
+				<section class="row">
+					<figure class="col-lg-6 col-sm-6 text-center">
+						<img src="img/protopie1.gif" class="img-fluid rounded prototype1">
+						<figcaption>
+							ProtoPie Interation A 
+						</figcaption>
+					</figure>
+					<figure class="col-lg-6 col-sm-6 text-center">
+						<img src="img/protopie2.gif" class="img-fluid rounded prototype2">
+						<figcaption>
+							ProtoPie Interation B
+						</figcaption>
+					</figure>
+				</section>
+				<section class="row container-chart justify-content-center">
+					<div class="col-lg-10 col-md-12">
+						<p class="description"> 
+							At this early stage of design process, I used ProtoPie, a codeless prototyping tool to quickly iterate and validate interface and interactions.
+							We've never done any interactive design with many texts in mobile, so it was crucial for us see actionable feedback from user testers.
+						</p>
+					</div>
+				</section>
+			</div>
+		</article>
+		<!--ProtoPie Actual Studio -->
+		<article class="container-fluid protopie-bg">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="img/protoPie_screenshot.png" class="img-fluid">
+				</div>
+				<div class="col-lg-4 ml-md-auto align-self-center">
+						<img src="img/protopie_logo.svg" class="img-fluid align-center logo" width="30%">
+						<p class="description-white">
+							I used invision to create rough prototypes. These rough prototypes were made for fast iteration and test by myself about timing and the flow of the pop-ups.
+						</p>
+				</div>						
+			</div>
+		</article>
+		<!--Visual Design Exploration-->
+		<article>
+			<div class="container">
+				<section class="row justify-content-center">
+					<div class="col-lg-10 container-chart">
+						<h5>
+							Visual Design Exploration 
+						</h5>
+						<p class="description">
+							Even though it was supposed to be a full screen interaction, it was supposed to be align with Switcher design system. 
+						</p>
+					</div>
+					<figure class="col-lg-12">
+						<img src="img/signal2_ui.png" class="img-fluid">
+					</figure>
+				</section>
+				<div class="row justify-content-center">
+					<div class="col-lg-10" class="embed-responvie">
+						<video src="img/curation.mp4" class="embed-responsive item" autoplay loop></video>
+					</div>
+				</div>
+			</div>
+		</article>
+		<div class="container">
+			<article>
+				<section class="row container-chart">
+					<div class="col-lg-12 align-self-center">
+						<h5>
+							Final Touch
+						</h5>
+					</div>
+					<div class="col-lg-6 align-self-center">
+						<p class="description">
+							By adding a full screen interactive survey to shift the focus to users' lifestyle, there must be a change to show the timer. <br>
+							The timer list screen was arranged by chronological order. it wasn't legible and inefficient because of four different factors unlike alarm clock : Light On / Light Off, Time, Repetition, Top Button / Bottom Button. 
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="img/timer_list_before.png" class="img-fluid">
+						<figcaption class="description text-center"> Real User's timer screen</figcaption>
+					</div>
+				</section>
+			</article>
+		</div>
+		<!--footer-->
+		<footer class = "text-center">
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
+		<script src="js/jQuery.js"></script>
+		<!--structure-->
+		<script src="js/projectBuilder.js"></script>
+		<!--calling function-->
+		<script src="js/project2.js"></script>
+		<script src="js/sarahChart2.js"></script>
+	</body>
+</html>
