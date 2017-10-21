@@ -26,7 +26,7 @@ var myPieChart = new Chart(ctx1, {
 
 var ctx2 = document.getElementById("pr2-bar").getContext("2d");
 var data = {
-  labels: ["No Timer","More than 1", "More than 3"],
+  labels: ["No Timer","More than 1 Timer", "More than 3 Timers"],
   datasets: [
         {
             backgroundColor: "#9d9cf3",

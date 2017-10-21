@@ -2,7 +2,7 @@
 
 /*var pr1Cover = '<div class="jumbo"></div>'*/
 var newSection = '<article class="container-chart"><div class="row justify-content-center" id="%data%"></div></article>';
-var newCardSection = '<section class="container-project"><div class="row"><p class="section-label">Switcher User Persona</p><div class="card-deck" id="%data%"></div></div></section>';
+var newCardSection = '<section class="container-project"><div class="row"><p class="section-label">Switcher User Persona</p><div class="card-deck card-deck-2" id="%data%"></div></div></section>';
 
 var prTitle = '<h1 id="name">%data%</h1>';
 var prLead = '<p class="section-label">%data%</p>';
@@ -38,7 +38,7 @@ var prTextLabel = '<p class="section-label"> %data% </p>';
 var prTextSrc = '<p class="description"> %data% </p>';
 var prTextSrc = '<p class="description-white"> %data% </p>';
 
-var proCardDeck = '<article class="card" id="%data%"><div class="card-body"> </div></article>';
+var proCardDeck = '<article class="card pre" id="%data%"><div class="card-body"> </div></article>';
 var proCardImg = '<img class="card-img-top" src="%data%">';
 var proCardName = '<h5 class="card-title">%data%</h5>';
 var proCardList = '<ul class="list-group list-group-flush" id="%data%"></ul>';

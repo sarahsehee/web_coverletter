@@ -16,9 +16,41 @@
 		<!--nav bar-->
 		<nav class="navbar sticky-top">
 		  <a class="nav-item back" href="index.html">Sarah Sehee</a>
-		  <div class="nav-item on">Project</div>
+		  <div class="nav-item on">Project 2</div>
 		</nav>
 		<!--Introduction-->
+		<div class="container">
+			<article>
+				<section class="row">
+					<p class="section-label col-lg-12">
+						Switcher, I/O Inc
+					</p>
+					<div class="col-lg-12">
+						<h1> Designing Interactive In-App Survey </h1>
+					</div>
+				</section>
+				<section class="row  overview">
+					<div class="col-lg-8">
+						<p class="section-label">
+							Overview
+						</p>
+						<p class="description">
+							Designing interactive in-app lifestyle survey for automatic timer curation / Improved the timer list screen to better legibility
+						</p>
+					</div>
+					<div class="col-lg-4">
+						<div>
+							<p class="section-label">
+								Duration
+							</p>
+							<p class="description">
+								Feb 2017 - Mar 2017
+							</p>
+						</div>
+					</div>
+				</section>
+			</article>
+		</div>
 		<main class="container" id="intro2">
 			<article id="project-cover">
 			</article>
@@ -51,11 +83,19 @@
 		   		<div class="container container-chart">
 				<section class="row  justify-content-center">
 					<div class="col-lg-12">
-						<h4> Willingess to become a paid user by the number of timer set-up</h4>
+						<h5 class="text-center"> Intention to become a premium user by the number of saved timer </h5>
 					</div>
 					<figure class="col-lg-10 align-self-center"> 
 						<canvas id="pr2-bar"></canvas> 
 					</figure>
+					<div class="col-lg-10 align-self-center">
+						<p class="description">
+							We went back to a group of users who are on the free trial. First, we asked how many timers they save and use and then asked their intention to subscribe one of premium to plan. 
+							Surprisingly, the free-to-paid conversion rate become 1.5 times higher if a user set more than three timers. 
+							<br><br>
+							Based on these two research data, we were exploring ways to help a user set more than three timers on their first Switcher set up process.  
+						</p>
+					</div>
 				</section>
 				</div>
 			</article>
@@ -87,7 +127,7 @@
 						</p>
 						<h4>
 						  1. User cannot imagine timer use cases that suit in their lifestyle.<br>
-						  2. There are too many steps to set and save timers.
+						  2. There are too many steps to save more than one timer.
 						</h4>
 					</div>
 				</section>
@@ -98,26 +138,49 @@
 				<section class="row container-chart">
 					<div class="col-lg-12">
 					<p class="section-label"> Design Solution . Version 1  </p>
-					<h4> Interactive Onboarding Survey </h4>
+					<h4> Interactive Lifestyle Pattern Survey </h4>
 					<p class="description">
-						Switcher User cannot find a sufficient information about timer in the app.
-						After trying a timer Pop-up guide, we realzied that pop-up wasn't enough. 
-						So interactive onboarding survey comes in as a solution. It must be feel like consult, smart-home and automattic.
-																				<br> <br>
-						Constraints: The ideal scenario would be incorporate timer function within a widget, but just have a button to open a timer wasn't enough action to encourage users to use the timer. Also, have a timer in widget required more effort and resources than we were limited. 
+                		Switcher User cannot find sufficient information about timer in the app.
+                        After trying a timer card guide, we realized that pop up modal wasn't enough and it is quite intrusive.
+                        So the interactive survey came out as a solution. It must be feeling like a professional consultant, which helps users to make their home smart.
+						<br> <br>
+					</p>
+					<p class="section-label">
+						Constraints
+					</p>
+					<p class="description">
+						The ideal scenario would be incorporate timer function within a widget, but just have a button to open a timer wasn't enough action to encourage users to use the timer. Also, have a timer in widget required more effort and resources than we were limited. 
 					</p>
 					</div>
 				</section>
 				<section class="row container-chart">
 					<div class="col-lg-6">
+						<h4> Higher Level Goals </h4>
+					</div>
+					<div class="col-lg-12">
+						<p class="description">
+							Help users to set up multiple timers at once ✅
+							<br>
+							Make users feel like they are customizing " smart " Swithcer 🤓
+							<br>
+							Keep consistent with Switcher mobile app's visual system 🌈
+							<br>
+							To increase the average price of first payment after a free-trial &#x2197
+						</p>
+					</div>
+				</section>
+				<section class="row container-chart">
+					<div class="col-lg-6 order-1">
 						<p class="section-label">
 						Role
 						</p>
-						<ul class="description">
-							<li>User Interface Design</li>
-							<li> Interaction Design</li>
-							<li> Prototyping </li>
-						</ul>
+						<p class="description">
+							User Interface Design
+							<br>
+							Interaction Design
+							<br>
+							Prototyping
+						</p>
 					</div>
 					<div class="col-lg-6">
 						<p class="description">
@@ -130,49 +193,49 @@
 		<!--life style questionnaire-->
 		<div class="container-fluid pr2-card-bg">
 			<section class="row">
-				<div class="col-lg-12 text-center container-chart">
-					<h4> Switcher users set and use timers to...</h4>
+				<div class="col-lg-12 text-center header-margin">
+					<h5> Questionnaire to evalute users' lifestyle pattern: </h5>
 				</div>
 			</section>
-			<article class="d-flex justify-content-around flex-lg-row flex-lg-nowrap flex-md-row flex-md-wrap flex-sm-column flex-sm-wrap">
-					<div class="lifestyle">
+			<article class="card-deck" id="something">
+					<div class="card">
 						<p class="card-title"> 
 							Morning Alarm
 						</p>
-						<p class="card-middle"> 
-							"When do you wake up in the morning?"
+						<p class="card-middle align-self-center"> 
+							"When do you<br> wake up <br>in the morning?"
 						</p>
 					</div>
-					<div class="lifestyle">
+					<div class="card">
 						<p class="card-title"> 
 							Empty House
 						</p>
-						<p class="card-middle"> 
-							"When do you usually leave the house?"
+						<p class="card-middle align-self-center"> 
+							"When do you <br> usually leave <br> the house?"
 						</p>
 					</div>
-					<div class="lifestyle">
+					<div class="card">
 						<p class="card-title"> 
 							Pet
 						</p>
-						<p class="card-middle"> 
-							"Do you live alone with a dog?"
+						<p class="card-middle align-self-center"> 
+							"Do you live <br> with a dog?"
 						</p>
 					</div>
-					<div class="lifestyle">
+					<div class="card">
 						<p class="card-title"> 
 							Live Alone
 						</p>
-						<p class="card-middle"> 
-							"Do you live alone and scared of dark?"
+						<p class="card-middle align-self-center"> 
+							"Do you live <br> alone and <br>scared of dark?"
 						</p>
 					</div>
-					<div class="lifestyle">
+					<div class="card">
 						<p class="card-title"> 
 							Night Timer
 						</p>
-						<p class="card-middle"> 
-							"When do you usually sleep at night?"
+						<p class="card-middle align-self-center"> 
+							"When do you <br>usually sleep <br>at night?"
 						</p>
 					</div>
 			</article>
@@ -191,23 +254,15 @@
 					<figure class="col-lg-6 col-sm-6 text-center">
 						<img src="img/protopie1.gif" class="img-fluid rounded prototype1">
 						<figcaption>
-							ProtoPie Interation A 
+							Vertical Layout
 						</figcaption>
 					</figure>
 					<figure class="col-lg-6 col-sm-6 text-center">
 						<img src="img/protopie2.gif" class="img-fluid rounded prototype2">
 						<figcaption>
-							ProtoPie Interation B
+							Horizontal Layout
 						</figcaption>
 					</figure>
-				</section>
-				<section class="row container-chart justify-content-center">
-					<div class="col-lg-10 col-md-12">
-						<p class="description"> 
-							At this early stage of design process, I used ProtoPie, a codeless prototyping tool to quickly iterate and validate interface and interactions.
-							We've never done any interactive design with many texts in mobile, so it was crucial for us see actionable feedback from user testers.
-						</p>
-					</div>
 				</section>
 			</div>
 		</article>
@@ -217,11 +272,16 @@
 				<div class="col-lg-6">
 					<img src="img/protoPie_screenshot.png" class="img-fluid">
 				</div>
-				<div class="col-lg-4 ml-md-auto align-self-center">
-						<img src="img/protopie_logo.svg" class="img-fluid align-center logo" width="30%">
-						<p class="description-white">
-							I used invision to create rough prototypes. These rough prototypes were made for fast iteration and test by myself about timing and the flow of the pop-ups.
+				<div class="col-lg-4 ml-auto mr-auto align-self-center">
+						<p class="section-label">
+							Prototyping and Test
 						</p>
+						<p class="description-white"> 
+							At this early stage of design process, I used ProtoPie, a codeless prototyping tool, to quickly iterate and validate interactions.
+							We've never done any interactive design with long text in mobile app, so it was necessary for us see actionable feedback from user testers. <br>
+							With the help of protopie, I was able to create seven working prototypes following by three cycles of design-build-test in three days.
+						</p>
+						<img src="img/protopie_logo.svg" class="img-fluid align-center logo" width="20%" style="margin-top: 2rem;">
 				</div>						
 			</div>
 		</article>
@@ -231,19 +291,22 @@
 				<section class="row justify-content-center">
 					<div class="col-lg-10 container-chart">
 						<h5>
-							Visual Design Exploration 
+							Visual Design 
 						</h5>
 						<p class="description">
-							Even though it was supposed to be a full screen interaction, it was supposed to be align with Switcher design system. 
+							With the help of ProtoPie, I didn't need to spend too much time waiting for working prototypes from engineers. There was not any problem with UX writing and and affordance with the wireframe so I moved on to put more visual elements on it. It was supposed to look trustful and lively, but still coherent with Switcher design system.
 						</p>
 					</div>
 					<figure class="col-lg-12">
-						<img src="img/signal2_ui.png" class="img-fluid">
+						<img src="img/screen_design.png" class="img-fluid">
 					</figure>
 				</section>
 				<div class="row justify-content-center">
 					<div class="col-lg-10" class="embed-responvie">
-						<video src="img/curation.mp4" class="embed-responsive item" autoplay loop></video>
+						<a href="https://share.protopie.io/X8KccPH1yiM" target="_blank">
+						<video src="img/curation.mp4" class="embed-responsive item" autoplay loop rounded></video>
+						<figcaption class="section-label text-center"> Click screen to play in ProtoPie Cloud</figcaption>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -253,7 +316,7 @@
 				<section class="row container-chart">
 					<div class="col-lg-12 align-self-center">
 						<h5>
-							Final Touch
+							Timer List Redesign
 						</h5>
 					</div>
 					<div class="col-lg-6 align-self-center">
@@ -264,13 +327,51 @@
 					</div>
 					<div class="col-lg-6">
 						<img src="img/timer_list_before.png" class="img-fluid">
-						<figcaption class="description text-center"> Real User's timer screen</figcaption>
+						<figcaption class="section-label text-center"> Real user's timer screen</figcaption>
+					</div>
+				</section>
+				<section class="row">
+					<div class="col-lg-12">
+					<img src="img/timer_item.png" class="img-fluid">
+					</div>
+				</section>
+			</article>
+		</div>
+		<div class="container">
+			<article>
+				<section class="row container-chart">
+					<div class="col-lg-6">
+						<p class="section-label">
+							Result
+						</p>
+						<h4>
+							So...How did it go?
+						</h4>
+					</div>
+					<div class="col-lg-6 align-self-center">
+						<p class="description">
+							Unfortunately, we did not implement proper Google Analytics events because of lack of data engineering resources. It is painful for me not to know about the result of the design that we've been carefully crafted. 
+						</p>
+					</div>
+				</section>
+				<section class="row">
+					<div class="col-lg-6 align-self-center">
+						<p class="description">
+							Although the most tedious, but essential part of design process improved with the use of protoPie. I've never experienced such a fast iteration and smooth transition from design to development with any other tools. <br><br>
+							Also, this project made us we think about what the real Smart Home and Device are. Can it be called Smart Home if it requires too much effort and time from users regularly? It gave us a chance to look back user's pain points and focus on problem-solving. 
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="img/prototyping.png" class="img-fluid rounded">
 					</div>
 				</section>
 			</article>
 		</div>
 		<!--footer-->
 		<footer class = "text-center">
+			<section class="container text-center">
+				<p class="footnote">Made with Bootstrap, Google Fonts, <a href="http://www.chartjs.org/">Chart.js</a> and <a href="https://yeun.github.io/open-arrow/">Open Arrow</a> <br><br> © 2017 Sarah Sehee Lim</p>
+			</section>
 		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
 		<script src="js/jQuery.js"></script>

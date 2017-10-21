@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:600,700|Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:600,700|Open+Sans:300,600');
 
 footer {
 	border-top: 1px solid #e3e7e9;
@@ -33,7 +33,13 @@ span {
 	color: #FF6E79;
 }
 
-
+.card-index {
+	font-size: 14px;
+	color: #FF6E79;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    border: none;
+}
 
 .letter {
 	width: 60%;
@@ -48,7 +54,7 @@ span {
 	font-size: 12px;
 }
 .jumbotron {
-	height: 100vh;
+	height: 100%;
 	background-color: #fff;
 }
 .card-title {
@@ -58,7 +64,7 @@ span {
 .card-text {
 	line-height: 28px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 0.05em;
 	padding-top: 1rem;
 	border-top: 1px solid #f1f7fb;
@@ -69,28 +75,34 @@ span {
 	text-transform: uppercase;
 }
 
-.link-to {
-	color: inherit;
+
+.nav {
+	font-family: "Inconsolata";
+	background-color: transparent;
+}
+
+.nav-link {
+	color: #b7bec9;
+	font-family: 'Inconsolata', monospace;
+	text-transform: uppercase;
+	padding: 4rem 0 0 0;
+	border-bottom: 1px dashed #b7bec9;
+}
+
+.nav-link:hover {
+	color:#FF6E79;
 	border-bottom: 1px dashed #FF6E79;
 	transition: color 0.3s ease;
 }
 
-.link-to:hover {
-	color:#FF6E79;
-	text-decoration: none;
-}
-
-.nav-item {
-	margin-right: 2rem;
-}
 
 .card {
-	border:none;
+	border:1px solid #f1f1f1;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 .card:hover {
-	border:none;
+	border:1px solid #f1f1f1;
     box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
     top: -5px;
 	transition: all 0.5s ease;

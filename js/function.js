@@ -2,15 +2,11 @@
 var jumbotron = {
 	"lead" : "Application",
 	"name" : "Hi, ProtoPie!",
-	"coverletter" : "My name is Sarah Sehee Lim. This is my web application including a cover letter, resume and portfolio for <span>a patissier position<\/span>. Throughout all pages on this website, every single moving images including .gif and videos are made with ProtoPie✌🏼.It was pretty impossible to get a tool that is just right. I spend overnight working on prototype that is half done, didn’t get a feedback I required and couldn’t go on 5 person user testing because I was already exhuasted from prototyping.Driver Profiles are a fantastic new tool to showcase our driver-partners’ awesomeness and introduce them to their riders. ",
+	"coverletter" : "My name is Sarah Sehee Lim. This is my web application including a cover letter, resume and portfolio for <span>a patissier position<\/span>. Throughout all pages on this website, every single moving images including .gif and videos are made with ProtoPie🙌 <br><br> As an international student in the States, I’ve always encountered language barriers in design critique sessions and presentations. Back then, there weren’t many choices of prototyping tools other than pen-and-paper mockup and form core. Rarely some students dived into the sea of coding, but not many people returned successfully. Prototyping wasn’t a tremendous issue because everyone was quite satisfied with their filthy paper models like Pop!<br> My concern about effective communication escalated as soon as I landed in Silicon Valley as an interaction designer. Unlike hardware products that I studied in school, there are too many screens, animations, and endless iterations after multiple cycles of user testing. It was impossible to get a tool that is \"just right\". I spend overnight working on a prototype that is half-done, failed to get a feedback I desperately needed and couldn’t go on mythical five-person usability testing because I was already exhausted from prototyping.<br><br>I believe my journey to find a just-right prototyping tool and a broad range of interaction design career will work like magical sprinkles in baking future Pies. I am ready to join ProtoPie to help fellow designers to save their precious time and get confident in their design process as I did✨",
 	"links" : [
 		{
-			"text" : "Resume",
+			"text" : "Check out resume",
 			"link" : "resume.html"
-		},
-		{
-			"text" : "Portfolio",
-			"link" : "#project-start"
 		}
 	]
 };
@@ -18,23 +14,23 @@ var jumbotron = {
 
 var projects = {
 	"card" : [
-		{
-			"link" : "file:///Users/limteraction/Desktop/_protoPie/timer.html",
-			"title" : "Designing Timer Pop-Up Guide",
-			"description" : ["User Experience"," User Interface"," Product Management"],
-			"image" : "img/rental.mov"
+		{	
+			"index" : "Project 1",
+			"link" : "timer.html",
+			"title" : "Improving Timer Experience",
+			"description" : ["User Experience"," User Interface"," Product Management"]
 		},
 		{
-			"link" : "file:///Users/limteraction/Desktop/_protoPie/curation.html",
-			"title" : "Designing Interactive In-App Survey",
-			"description" : ["User Interface"," Interaction Design"," Prototyping"," User Testing"],
-			"image" : "img/rental.mov"
+			"index" : "Project 2",
+			"link" : "curation.html",
+			"title" : "Designing Interactive Survey",
+			"description" : ["User Interface"," Interaction Design"," Prototyping"," User Testing"]
 		},
 		{
-			"link" : "file:///Users/limteraction/Desktop/_protoPie/samsung.html",
+			"index" : "Project 3",
+			"link" : "samsung.html",
 			"title" : "Thinking Beyond Mobile Screen",
-			"description" : ["User Experience, Interaction"],
-			"image" : "img/desing.png"
+			"description" : ["User Experience, Interaction Design"]
 		}
 	]
 };
@@ -99,11 +95,10 @@ project.display = function(){
 	//concat Project and title
 		var projectLink = projectCard.replace("%data%",projects.card[item].link);
 		$(".card-deck").append(projectLink);
-		var projectImage = projectCardImage.replace("%data%",projects.card[item].image);
+		var projectIndex = projectCardIndex.replace("%data%", projects.card[item].index);
 		var projectTitle = projectCardTitle.replace("%data%", projects.card[item].title);
 		var projectDescription = projectCardDes.replace("%data%", projects.card[item].description);
-		$(".card:last").prepend(projectImage);
-		$(".card-body:last").append(projectTitle,projectDescription);
+		$(".card-body:last").append(projectIndex,projectTitle,projectDescription);
 	}
 };
 project.display();

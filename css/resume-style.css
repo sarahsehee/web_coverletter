@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
+
 footer {
 	border-top: 1px solid #e3e7e9;
 	background-color: #f7f9fa;
@@ -34,9 +35,11 @@ ul {
 
 /*nav styling*/
 .navbar {
+	font-family: "Inconsolata";
 	background-color: transparent;
 }
 .nav-item {
+	border: none;
 	margin: 2rem 2rem 1rem 2rem;
 }
 .back {
@@ -47,8 +50,8 @@ ul {
 }
 /*have enough padding left and right*/
 .container {
-	padding-right: 30px;
-    padding-left: 30px;
+	padding-right: 3rem;
+    padding-left: 3rem;
 }
 /*section space*/
 #work,

@@ -41,6 +41,10 @@ h5 {
 	color: #ffffff;
 }
 
+.header-margin {
+	margin-top: 3rem;
+}
+
 p {
 	margin: 0;
 	font-family: "open-arrow","Open sans", sans-serif;
@@ -108,7 +112,6 @@ article {
 }
 
 .card-text-quote {
-	font-style: italic;
 	color: #575757;
 	text-align: center;
 	vertical-align: center;
@@ -238,8 +241,8 @@ figure {
 }
 
 .card {
-	font-family: 'Open Sans', helvetica, sans-serif;
-	font-size: 14px;
+	font-family: "Open Sans";
+	font-weight: 600;
 	padding: 1rem 1rem 2rem 1rem;
 	margin-right: 2rem;
 	margin-top: 2rem;

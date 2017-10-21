@@ -4,7 +4,7 @@
 		<!-- This tells the browser how to read the document. -->
 		<meta charset="utf-8">
 		<!-- Tells the browser what the title of this page should be. -->
-		<title>Project 1 : Improving Switcher Timer Experience</title>
+		<title>Improving Switcher Timer Experience</title>
 		<!-- Load the page styles. -->
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">  
@@ -30,7 +30,7 @@
 		<!--nav bar-->
 		<nav class="navbar sticky-top">
 		  <a class="nav-item back" href="index.html"> Sarah Sehee</a>
-		  <div class="nav-item on">Project</div>
+		  <div class="nav-item on">Project 1</div>
 		</nav>
 		<div class="container">
 			<article>
@@ -39,7 +39,7 @@
 						Switcher, I/O Inc
 					</p>
 					<div class="col-lg-12">
-						<h1> Designing Timer Pop-up Guide </h1>
+						<h1> Improving Switcher Timer Experience </h1>
 					</div>
 				</section>
 				<section class="row  overview">
@@ -48,26 +48,10 @@
 							Overview
 						</p>
 						<p class="description">
-							Aug 2016 - Sep 2016
+							Analyzing users behavior that affects conversion rate with data, and designing a sequential visual guide to introduce Switcher timer in a small scale.
 						</p>
 					</div>
 					<div class="col-lg-4">
-						<div>
-							<p class="section-label">
-								Responsibilities
-							</p>
-							<p class="description">
-								User Scenario 
-								<br>
-								Information Architecture
-								<br>
-								Prototyping
-								<br>
-								UI/UX Design
-								<br>
-								User Test
-							</p>
-						</div>
 						<div>
 							<p class="section-label">
 								Duration
@@ -105,344 +89,268 @@
 				</div>
 			</article>
 		</main>
+		<div class="wrapper">
 		<!--Automation ProtoPie Video-->
-		<article class="container-fluid" id="automation">
-			<section class="row justify-content-center">
-				<div class="col-lg-8 col-xl-6">
-					<video class="embed-responsive video-border" autoplay loop>
-						<source src="img/timer.mov"/>
-					</video>
-				</div>
-			</section>
-		</article>
-		<!--rental system-->
-		<div class="container">
-			<article id="project-intro">
-			</article>
-			<article id="why-timer">
-				<section class="row">
-					<div class="col-lg-12">
-						<p class="section-label"> Why I focused on Timer </p>
-						<p class="description">
-							Switcher is a rental service offering four paid subscription plans: monthly, annual, biannual and triennial plans. By trying Switcher for one month, users can decide if it is useful, select one of these four subscription plans to keep using or return Switcher to cancel automattic recurring montly subscription plan. 
-						</p>
+			<article class="container-fluid" id="automation">
+				<section class="row justify-content-center">
+					<div class="col-lg-8 col-xl-6">
+						<video class="embed-responsive video-border" autoplay loop>
+							<source src="img/timer.mov"/>
+						</video>
 					</div>
 				</section>
 			</article>
-		</div>
-		<div class="container-fluid">
-				<div class="row justify-content-center">
-					<figure class="col-lg-10">
-						<img src="img/rental_flow.png" class="img-fluid">
-					</figure>
-				</div>
-		</div>
-	<!-- why automation-->
-		<div class="container">
-			<article class="something">
-					<section class="container-entry">
-						<p class="description">
-							In August 2016, we ran several rounds of quantitive studies to discover what affects the trial-to-paid conversion rate, and finally found out the correlation between the number of users who use timer and the trial-to-premium conversion rate. 67.5% of a group of premium users were utilizing more than one timer. In a meanwhile, only 35.3% of a group of users who returned Switchers after the free trial didn't set any timer at all.
-						</p>
+			<!--rental system-->
+			<div class="container">
+				<article id="project-intro">
+				</article>
+				<article id="why-timer">
+					<section class="row">
+						<div class="col-lg-12">
+							<p class="section-label"> Why I focused on Timer </p>
+							<p class="description">
+								Switcher is a rental service offering four paid subscription plans: monthly, annual, biannual and triennial plans. By trying Switcher for one month, users can decide if it is useful, select one of these four subscription plans to keep using or return Switcher to cancel automattic recurring montly subscription plan. 
+							</p>
+						</div>
 					</section>
-					<!--Chart JS-->
-					<section id="chart-text">
-						<div class="row container-chart">
-							<div class="col-lg-12 text-center">
-								<h4>
-									Percentage(%) of users utilizing a timer
-								</h4>
+				</article>
+			</div>
+			<div class="container-fluid">
+					<div class="row justify-content-center">
+						<figure class="col-lg-10">
+							<img src="img/rental_flow.png" class="img-fluid">
+						</figure>
+					</div>
+			</div>
+		<!-- why automation-->
+			<div class="container">
+				<article class="something">
+						<section class="container-entry">
+							<p class="description">
+								In August 2016, we ran several rounds of quantitive studies to discover what affects the trial-to-paid conversion rate, and finally found out the correlation between the number of utilized timer and the trial-to-premium conversion. 67.5% of a group of premium users were utilizing more than one timer. In a meanwhile, only 35.3% of a group of users who returned Switchers after the free trial set s timer.
+							</p>
+						</section>
+						<!--Chart JS-->
+						<section id="chart-text">
+							<div class="row container-chart">
+								<div class="col-lg-12 text-center">
+									<h5>
+										Percentage(%) of users who set and use a timer
+									</h5>
+								</div>
+								<figure class="col-lg-6 col-md-6"> 
+									<canvas id="chart-premium">
+									</canvas> 
+									<figcaption class="chart-text"> 
+										<p class="description"> 
+											Premium Switcher Users 
+										</p>	
+									</figcaption>
+								</figure>
+								<figure class="col-lg-6 col-md-6" > 
+									<canvas id="chart-return"></canvas> 
+									<figcaption class="chart-text"> 
+										<p class="description"> 
+											Users who <strong> returned </strong> Switcher after the free trial 
+										</p>
+									</figcaption>
+								</figure>
 							</div>
-							<figure class="col-lg-6 col-md-6"> 
-								<canvas id="chart-premium">
-								</canvas> 
-								<figcaption class="chart-text"> 
-									<p class="description"> 
-										<strong> subscribed </strong> Switcher after the free trial 
-									</p>	
-								</figcaption>
-							</figure>
-							<figure class="col-lg-6 col-md-6" > 
-								<canvas id="chart-return"></canvas> 
-								<figcaption class="chart-text"> 
-									<p class="description"> 
-										Users who <strong> returned </strong> Switcher after 1-month Free Trial 
+							<div class="row container-chart">
+								<div class="col-lg-12">
+									<p class="description">
+									Based on the result above, we made a hypothesis that if a user installed and utilized one or more timer during the free trial, she becomes a premium user. To validate, we ran another suvery to premium users, and asked if they are using a timer and which subscription plan they chose. And it showed that users who utilize timer selects longer and more expansive subscription plan than users who doesn't use any timer.
 									</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="row container-chart">
-							<div class="col-lg-12">
-								<p class="description">
-								Based on the result above, we made a hypothesis that if a user installed and utilized one or more timer, she wants to use it longer than a month cause it solves a problem in her lifestyle. To validate the idea, we ran another suvery to paid users asked if they used a timer and which subscription plan they chose. 
-								</p>
+								</div>
 							</div>
-						</div>
-						<div class="row container-chart">
-							<div class="col-lg-12  text-center">
-								<h4> Paid Users Timer and Price Plan </h4>
+							<div class="row container-chart">
+								<div class="col-lg-12  text-center">
+									<h5> Premium Users' Timer and Plan</h5>
+								</div>
+								<figure class="col-lg-12 col-md-12"> 
+									<canvas id="chart-compare">
+									</canvas> 
+								</figure>
 							</div>
-							<figure class="col-lg-12 col-md-12"> 
-								<canvas id="chart-compare">
-								</canvas> 
-							</figure>
+						</section>
+					<section class="row">
+						<div class="col-lg-12 container-chart">
+							<p class="description">
+								Even though we always emphasize the benefit of timer and use the word in our marketing copyright and website, still there are a lot of users who don't use a timer even though it can maximize their smart home device. So we individually interviewed them to figure out the reason why they don't use a timer:
+							</p>
+						</div>
+						<div class="col-lg-12">
+							<h4> 
+								1. Many users don't know about timer at all. <br>
+								2. Users can't find any information about timer in mobile app.
+							</h4>
 						</div>
 					</section>
-			</article>
-			<article>
-				<div class="container">
-				<section class="row">
-					<div class="col-lg-12">
-						<p class="section-label"> 
-							Problem
-						</p>
-					</div>
-					<div class="col-lg-12 align-self-center">
-						<h4> 
-							Users aren't aware of timer and can't find any information about timer in app.
-						</h4>
-					</div>
-					<div class="col-lg-12">
+				</article>
+			</div>
+		<!--design version1-->
+			<div class="container">
+				<article>
+					<section class="row container-chart">
+						<div class="col-lg-12">
+						<p class="section-label"> Design Solution . Version 1  </p>
+						<h4> Card Modal </h4>
 						<p class="description">
-							Even though we always put "switcher timer" in marketing material and website, still there are a lot of users who doesn't use timer even though it can maximize their smart home device. 
-							So we called them asked why they don't use a timer and here are main four reasons why they don't use it. 
+							Switcher mobile app does not provide sufficient information about timer in the app. Instead of making a full interactive onboarding on the first set-up, card style modal came out as a solution so that it can appear to users who's been already using Switcher. Also, it was the smallest scale of design and required fewer resources and time. Thus, we designed the card guide as our first step to knowing about user behavior with timer. 
 						</p>
-					</div>
-				</section>
-				</div>
-			</article>
-		</div>
-		<div class="container">
-			<article class="card-deck">
-						<section class="card">
+						</div>
+					</section>
+					<section class="row container-chart">
+						<div class="col-lg-6">
+							<h4> Higher Level Goal </h4>
+						</div>
+						<div class="col-lg-12">
 							<p class="description">
-							“I didn’t know about timer”
+								To guide user to test and understand the concept of Switcher timer ✅
+								<br>
+								To suggest a timer use case other than morning-lit-up to user ☀️
+								<br>
+								To increase the converstion rate of free-to-paid &#x2197
+								<br>
+								To increase the average price of first payment after a free-trial &#x2197
 							</p>
-						</section>
-						<section class="card">
-							<p class="description">
-							“Just didn’t do it.”
+						</div>
+					</section>
+				</article>
+			</div>
+			<div class="container-fluid dark">
+					<div class="row">
+						<div class="col-lg-3 ml-md-auto align-self-center">
+							<h5 class="white">Design Process</h5>
+							
+							<p class="description-white">
+								I used inVsion to create rough prototypes. These rough prototypes were made for fast iteration and test by myself about timing and the flow of the Cards. <img src="img/invision_logo.png" class="img-fluid" width="20px"> 
 							</p>
-						</section>
-						<section class="card">
-							“I don’t know when to use Switcher Timer except morning alarm.”
-						</section>
-						<section class="card">
-							“I don’t understand the concept of timer”
-						</section>
-			</article>
-		</div>
-	<!--design version1-->
-		<div class="container">
-			<article>
-				<section class="row container-chart">
-					<div class="col-lg-12">
-					<p class="section-label"> Design Solution . Version 1  </p>
-					<h4> Pop-Up Modal </h4>
-					<p class="description">
-						Switcher User cannot find a sufficient information about timer in the app.
-						Instead of making a full interactive onboarding on the first set-up, Pop-Up modal came out as a solution because it can be shown to users who've been using Switcher.
-					</p>
+						</div>
+						<div class="col-lg-7">
+						<img class="img-fluid rounded" src="img/invision.png">
+						</div>
 					</div>
-				</section>
-				<section class="row container-chart">
-					<div class="col-lg-6">
-						<h4> Higher Level Goal </h4>
-					</div>
-					<div class="col-lg-12">
-						<p class="description">
-							To guide user to test and understand the concept of Switcher timer ✅
-							<br>
-							To suggest a timer use case other than morning-lit-up to user ☀️
-							<br>
-							To increase the converstion rate of free-to-paid &#x2197
-							<br>
-							To increase the average price of first payment after a free-trial &#x2197
-						</p>
-					</div>
-				</section>
-			</article>
-		</div>
-		<div class="container">
-			<article>
-				<p class="section-label"> Design Process </p>
-			</article>
-		</div>
-		<div class="container-fluid dark">
-				<div class="row">
-					<div class="col-lg-3 ml-md-auto align-self-center">
-						<h5 class="white">Design Process</h5>
-						
-						<p class="description-white">
-							I used inVsion to create rough prototypes. These rough prototypes were made for fast iteration and test by myself about timing and the flow of the pop-ups. <img src="img/invision_logo.png" class="img-fluid" width="20px"> 
-						</p>
-					</div>
-					<div class="col-lg-7">
-					<img class="img-fluid rounded" src="img/invision.png">
-					</div>
-				</div>
-		</div>
+			</div>
 			<div class="container-fluid">
 				<article>
 					<section class="row container-chart">
 						<div class="col-lg-3">
 						</div>
 						<div class="col-lg-6">
-							<p class="section-label"> Visual Design Exploration </p>
+							<p class="section-label"> Design Development </p>
 							<p class="description">
-								After getting a flow, I ran 3 rounds of user test with rough prototypes to check duration and affordance.
+								After running two rounds of text-only prototypes, I got feedback that card didn't look like something that holds valuable information.
+								<br><br>
+								So I designed illustrations on three cards to fill out the card to draw users' attention. At a glance, our users get fun and useful guide to learn new feature about Switcher, which helps to improve the smart home experience for them. 
 							</p>
 						</div>
 						<div class="col-lg-3">
-								<ul class="description">
-									<li> 1. To check is users can recognize the message </li>
-									<li> 2. To check if users are aware of the flow. </li>
-									<li> 3. Check if users can remember the images </li>
-									<li> 4. Finally, check if users are aware of Timer. </li>
-								</ul>
 						</div>
 					</section>
 				</article>
 			</div>
 
-				<!-- Final Design -->
-		<div class="container-fluid dark">
-			<div class="row justify-content-center">
-				<div class="col-lg-10 align-self-center">
-					<img src="img/project1_final_design.png" class="img-fluid">
+					<!-- Final Design -->
+			<div class="container-fluid dark">
+				<div class="row justify-content-center">
+					<div class="col-lg-10 align-self-center">
+						<img src="img/project1_final_design.png" class="img-fluid">
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="container container-chart">
-			<article class="row">
-				<figure class="col-lg-6">
-					<video class="embed-responsive" autoplay loop>
-						<source src="img/signal1.mp4">
-					</video>
-				</figure>
-				<section class="col-lg-6 align-self-center text-center">
-					<h4> Timer Pop-Up #1 </h4>
-					<p class="description">
-						"Save Energy with Switcher"
-						<br><br>
-						&#x2193
-					</p>
-				</section>
-			</article>
-			<article class="row">
-				<figure class="col-lg-6">
-					<video class="embed-responsive" autoplay loop>
-						<source src="img/signal2.mp4">
-					</video>
-				</figure>
-				<section class="col-lg-6 align-self-center text-center">
-					<h4> Timer Pop-Up #2 </h4>
-					<p class="description">
-						"First, let's set a timer to turn the light off 3 mins later!"
-						<br><br>
-						&#x2193
-					</p>
-				</section>
-			</article>
-			<article class="row">
-				<figure class="col-lg-6">
-					<video class="embed-responsive" autoplay loop>
-						<source src="img/signal3.mp4">
-					</video>
-				</figure>
-				<section class="col-lg-6 align-self-center text-center">
-					<h4> Timer Pop-Up #3 </h4>
-					<p class="description">
-						"Great! Let's add one more timer. <br> Turn off the light when your house is empty!"
-						<br>
-					</p>
-					<h3> 
-						🙌🏻
-					</h3>
-				</section>
-			</article>
-		</div>
-
-		<div class="container">
-				<article>
-					<section class="row container-chart">
-							<div class="col-lg-12">
-								<h4> Tweaking Details with User Test</h4>
-							</div>
-							<div class="card-deck">
-								<div class="card">
-									<h5>
-										2 out of 5 testers remembered new use case about energy saving
-									</h5>
-									<p> 
-										1 out of 5 testers remembers new use about energy saving
-									</p>
-								</div>
-								<div class="card">
-									<h5>
-										2 out of 5 testers remembered new use case about energy saving
-									</h5>
-									<p> 
-										1 out of 5 testers remembers new use about energy saving
-									</p>
-								</div>
-							</div>
+			<div class="container container-chart">
+				<!--timer 1-->
+				<article class="row">
+					<figure class="col-lg-6">
+						<video class="embed-responsive" autoplay loop>
+							<source src="img/signal1.mp4">
+						</video>
+					</figure>
+					<section class="col-lg-6 align-self-center text-center">
+						<h4> Card #1 </h4>
+						<p class="description">
+							"Save Energy with Switcher"
+							<br><br>
+							&#x2193
+						</p>
+					</section>
+				</article>
+				<!--timer 2-->
+				<article class="row">
+					<figure class="col-lg-6">
+						<video class="embed-responsive" autoplay loop>
+							<source src="img/signal2.mp4">
+						</video>
+					</figure>
+					<section class="col-lg-6 align-self-center text-center">
+						<h4> Card #2 </h4>
+						<p class="description">
+							"First, let's set a timer to turn the light off 3 mins later!"
+							<br><br>
+							&#x2193
+						</p>
+					</section>
+				</article>
+				<!--timer 3-->
+				<article class="row">
+					<figure class="col-lg-6">
+						<video class="embed-responsive" autoplay loop>
+							<source src="img/signal3.mp4">
+						</video>
+					</figure>
+					<section class="col-lg-6 align-self-center text-center">
+						<h4> Card #3 </h4>
+						<p class="description">
+							"Great! Let's add one more timer. <br> Turn off the light when your house is empty!"
+							<br>
+						</p>
+						<h3> 
+							🙌🏻
+						</h3>
 					</section>
 				</article>
 			</div>
-
-			<div class="container">
-				<article>
-					<div class="row container-chart">
-						<div class="col-lg-12">
-							<h4> Result </h4>
-						</div>
-						<div class="col-lg-12">
-							<img src="img/ga.png" class="img-fluid">
-						</div>
-					</div>
-				</article>
-			</div>
-			<article>
-			<div class="container">
-				<article>
-					<div class="row container-chart">
-						<div class="col-lg-12">
-							<p class="section-label"> Takeaways </p>
-
-							<ol class="description">
-								<li> 
-									Partnering closely with the marketer to discover about users' pain points by approaching different research methods including survey, interview, and Google Analytics 
-								</li>
-								<li>
-									Prototyping and testing small scale of design to real people and getting actionable feedback
-								</li>
-								<li>
-									Overseeing the holistic in-App user experience from the notice to the exit 
-								</li>
-								<li>
-									Designing infographics assets and pop-up modal user interface elements 
-								</li>
-							</ol>
-
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-12 col-md-12"> 
-								<h4> What I could have done differently? </h4>
-								<p class="description">
-									it was great oppourtunity for me to think holistic in-app experience.
-									Also, knowing how to change minial change to give impact was a big lesson for me 
+				<!--result-->
+				<div class="container">
+					<article>
+						<div class="row container-chart">
+							<div class="col-lg-12">
+								<p class="section-label">
+									Result
 								</p>
+								<h4 class="text-center"> Timer Card Guide Funnel Chart </h4>
+							</div>
+							<div class="col-lg-12">
+								<img src="img/ga.png" class="img-fluid">
 							</div>
 						</div>
-					</div>
-				</article>
-			</div>
+						<div class="col-lg-12 container-chart">
+							<p class="description">
+	                        I assumed the conversion rate of timer guide would be 20% before tracking google analytics, but it appeared that there is a high drop-off rate on Card #2 and Card #3. It gave us an insight that presenting more than two modals are conceived as intrusive in user's behavior and there should be less steps to guide users to timer. 
+	                    	</p>
+						</div>
+						<div class="col-lg-12">
+								<p class="section-label"> Takeaways </p>
+								<p class="description">
+										Partnering closely with the marketer to discover about users' pain points by approaching different research methods including survey, interview, and Google Analytics 
+										<br>
+										Prototyping and testing small scale of design to real people and getting actionable feedback
+										<br>
+										Overseeing the holistic In-App user experience
+										<br>
+										Designing infographic assets and card user interface elements for future use
+								</p>
+						</div>
+					</article>
+				</div>
 		</div>
-		</article>
 		<!--footer-->
 		<footer class = "text-center">
+						<section class="container text-center">
+				<p class="footnote">Made with Bootstrap, Google Fonts, <a href="http://www.chartjs.org/">Chart.js</a> and <a href="https://yeun.github.io/open-arrow/">Open Arrow</a> <br><br> © 2017 Sarah Sehee Lim</p>
+			</section>
 		</footer>
 		<script src="js/jQuery.js"></script>
 		<!--structure-->
